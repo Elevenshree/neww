@@ -1,0 +1,59 @@
+git clone https://github.com/Ashish6298/GithubClass
+Cd
+git add .
+git commit -m "<message>"
+
+ #Create a new branch named "feature-branch". Switch to the "master" branch. Merge the "feature-branch" into "master".
+
+git branch feature-branch
+git checkout feature-branch
+git add .
+git commit -m "<message>"
+git push origin feature-branch:main
+
+#Write the command to stash your changes switch branches and then apply the stashed changes.
+
+git stash
+git checkout -b new-branch
+git stash apply
+
+
+
+
+git clone <url>
+git checkout -b feature-branch
+Make some changes (add some files.py or .txt)
+git add .
+git commit -m "Changes"
+git fetch origin
+git rebase origin/main
+git push origin feature-branch
+git merge feature-branch
+git pull origin feature-branch  
+git push
+
+
+git add .
+git commit -m "message"
+git tag -a v1.0 -m "message"
+git push origin tag v1.0
+
+
+
+
+git add .
+git commit -m "Source branch"
+git push
+git status
+git log --oneline
+git checkout main
+git cherry-pick <hash_code>
+
+
+
+git log --oneline
+git show <commit_id>
+git log --author="JohnDoe" --after="2023-01-01" --before="2023-12-31"
+git log -n 5
+git revert abc123
+:wq
